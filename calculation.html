@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Srk Vodnala">
+    <meta name="description" content="This is about me">
+
+    <title>Srk Vodnala</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+
+    <!--from w3Schools -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Sacramento&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body style="background-color: #e1f2fb;">
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./calculation.html.html">Converter</a></li>
+            </ul>
+        </nav>
+        <h1 class="top-level">SRK VodNala</h1>
+    </header>
+
+
+    <h2>Weight Converter</h2>
+    <p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+
+    <p>
+        <label>Pounds</label>
+        <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+    </p>
+    <p>Kilograms: <span id="outputKilograms"></span></p>
+
+    <script>
+        function weightConverter(valNum) {
+            document.getElementById("outputKilograms").innerHTML = valNum / 2.2046;
+        }
+    </script>
+
+
+
+
+    <footer>
+        <div class="footerInfo">
+            &copy; Copyright 2020 SRK VodNala
+        </div>
+    </footer>
+</body>
+
+</html>
