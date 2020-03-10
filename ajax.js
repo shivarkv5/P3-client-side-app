@@ -1,4 +1,4 @@
-function example() {
+function ajaxMeth() {
     const jokeURI = 'https://dog.ceo/api/breeds/image/random'
 
     // fetch information
@@ -16,9 +16,9 @@ function example() {
     // interact with DOM
     const updateWithJoke = async(event) => {
         try {
-            document.querySelector('#result').src = ''
+            document.querySelector('#resul').src = ''
             const answer = await getJoke()
-            document.querySelector('#result').src = answer
+            document.querySelector('#resul').src = answer
         } catch (error) { console.error(error) }
     }
     updateWithJoke(getJoke)
