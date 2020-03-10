@@ -22,6 +22,6 @@ function multiplyBy() {
 
     let c = mult(localStorage.getItem("firstNumber"))
     let d = mult(localStorage.getItem("secondNumber"))
-    document.getElementById("result").innerHTML = mult(c, d)
+    document.getElementById("result").innerHTML = mult(num1, num2)
 
 }
